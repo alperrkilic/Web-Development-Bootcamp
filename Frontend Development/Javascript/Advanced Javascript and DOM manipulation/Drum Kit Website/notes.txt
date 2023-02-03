@@ -1,0 +1,36 @@
+    function handleClick() {
+        alert("I got clicked");
+    }
+
+    for (var i = 0; i < numberOfDrumButtons; i++) {
+        document.querySelectorAll(".drum")[i].addEventListener("click", handleClick); // it is important to write just the name of the function instead of handleClick()
+    }
+
+    var audio = new Audio('audio_file.mp3');
+    audio.play();
+
+
+    Javascript Objects:
+    
+    var bellboy1 = {
+        name: "Timmy",
+        age:19,
+        hasWorkPermit: true,
+        languages:["French","English"]
+    }
+
+    In order to prevent initializing objects every time, lets think of functions:
+
+    function BellBoy(name,age,hasWorkPermit,languages){
+        this.name = name;
+        this.age = age;
+        this.hasWorkPermit = hasWorkPermit;
+        this.languages = languages;
+        this.carry = function(){
+            alert("Carrying stuff");
+        }
+    }
+
+    Initializing objects:
+
+    var bellboy1 = new BellBoy("Timmy",19,true,["French","English"]);
