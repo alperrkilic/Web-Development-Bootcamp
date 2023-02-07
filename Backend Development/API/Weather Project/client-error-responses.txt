@@ -1,0 +1,4 @@
+Status Code
+401 -> Unauthorized access which means api is not true
+404 -> Not found url is wrong
+200 -> Working perfectly
